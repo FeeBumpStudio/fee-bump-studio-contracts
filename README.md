@@ -40,6 +40,19 @@ The contract repository owns only the state transitions that benefit from Stella
 
 > ⚠️ **Status:** development baseline, Testnet-oriented. This contract is **not audited** and **not production-ready**. Do not deploy it with real value.
 
+## Documentation
+
+📖 **Full documentation:** [https://feebumpstudio.github.io/fee-bump-studio-contracts/](https://feebumpstudio.github.io/fee-bump-studio-contracts/)
+
+The documentation site includes:
+- Getting Started guides
+- Contract Guide (architecture, interface, storage, auth, events, testing, deployment)
+- Developer Guide (project structure, local development, building, contributing)
+- API Reference (functions, storage keys, errors, TypeScript client)
+- Configuration reference
+- Operations guides (deployment, upgradeability, monitoring)
+- Security and FAQ
+
 ## Current contract surface
 
 The `FeeBumpStudioContract` exposes:

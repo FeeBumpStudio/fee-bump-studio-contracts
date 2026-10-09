@@ -1,0 +1,120 @@
+site_name: FeeBumpStudio Contracts
+site_description: The Soroban contract layer of FeeBumpStudio
+site_url: https://feebumpstudio.github.io/fee-bump-studio-contracts/
+repo_url: https://github.com/FeeBumpStudio/fee-bump-studio-contracts
+repo_name: FeeBumpStudio/fee-bump-studio-contracts
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2026 <a href="https://github.com/Jubilee-001">Jubilee</a>
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Prerequisites: getting-started/prerequisites.md
+      - Installation: getting-started/installation.md
+      - Configuration: getting-started/configuration.md
+      - First Run: getting-started/first-run.md
+  - Contract Guide:
+      - Architecture: contract-guide/architecture.md
+      - Interface: contract-guide/interface.md
+      - Storage: contract-guide/storage.md
+      - Authorization: contract-guide/authorization.md
+      - Events: contract-guide/events.md
+      - Testing: contract-guide/testing.md
+      - Deployment: contract-guide/deployment.md
+  - Developer Guide:
+      - Project Structure: developer-guide/project-structure.md
+      - Local Development: developer-guide/local-development.md
+      - Building: developer-guide/building.md
+      - Contributing: developer-guide/contributing.md
+  - API Reference:
+      - Contract Functions: api-reference/functions.md
+      - Storage Keys: api-reference/storage.md
+      - Error Codes: api-reference/errors.md
+      - TypeScript Client: api-reference/typescript-client.md
+  - Configuration:
+      - Environment Variables: configuration/environment-variables.md
+      - Network Settings: configuration/network-settings.md
+  - Operations:
+      - Deployment: operations/deployment.md
+      - Upgradeability: operations/upgradeability.md
+      - Monitoring: operations/monitoring.md
+  - Security:
+      - Responsible Disclosure: security/responsible-disclosure.md
+      - Assumptions: security/assumptions.md
+      - Limitations: security/limitations.md
+  - FAQ: faq.md
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/FeeBumpStudio/fee-bump-studio-contracts
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/feebumpstudio
+  version:
+    provider: mike
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mermaid.js
