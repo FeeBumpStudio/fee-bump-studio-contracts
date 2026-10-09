@@ -2,9 +2,13 @@
 name = "fee-bump-studio-contracts"
 version = "0.1.0"
 edition = "2021"
+authors = ["Jubilee-001"]
+description = "Soroban contract layer for FeeBumpStudio: verifiable fee-bump event records on Stellar."
+license = "MIT"
 
 [lib]
-crate-type = ["cdylib"]
+name = "fee_bump_studio_contracts"
+crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 soroban-sdk = "28"

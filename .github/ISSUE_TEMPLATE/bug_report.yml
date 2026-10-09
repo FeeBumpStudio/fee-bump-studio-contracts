@@ -1,0 +1,37 @@
+---
+name: Bug report
+about: Report a bug in the FeeBumpStudio contracts
+title: "[BUG] "
+labels: bug
+assignees: Jubilee-001
+---
+
+## Description
+
+A clear and concise description of what the bug is.
+
+## Steps to Reproduce
+
+1. Run `cargo test` or specific test
+2. Observe failure
+
+## Expected Behavior
+
+A clear and concise description of what you expected to happen.
+
+## Contract State
+
+If applicable, describe the contract state that leads to the issue:
+- Function called
+- Arguments passed
+- Storage state before/after
+
+## Environment
+
+- Rust version: [e.g. 1.75.0]
+- Soroban SDK version: [e.g. 28]
+- Target: [wasm32-unknown-unknown / host]
+
+## Additional Context
+
+Add any other context about the problem here.

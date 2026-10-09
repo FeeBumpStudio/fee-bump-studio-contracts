@@ -6,3 +6,7 @@ target/
 .next/
 dist/
 coverage/
+*.log
+.DS_Store
+*.pem
+Cargo.lock
