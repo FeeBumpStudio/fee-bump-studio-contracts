@@ -132,7 +132,7 @@ Open PR against `main` branch. Fill out the PR template.
 - **No secrets in code** — Use environment variables
 - **No mainnet in CI** — Testnet only for automated tests
 - **Audit dependencies** — `cargo audit` before merging
-- **Report vulnerabilities** — See [SECURITY.md](../../SECURITY.md)
+- **Report vulnerabilities** — See [SECURITY.md](../security/responsible-disclosure.md)
 
 ## Documentation Updates
 
@@ -167,7 +167,7 @@ All PRs must:
 
 - **GitHub Discussions** — Design questions, architecture
 - **GitHub Issues** — Bugs, feature requests
-- **Security** — Private disclosure per [SECURITY.md](../../SECURITY.md)
+- **Security** — Private disclosure per [SECURITY.md](../security/responsible-disclosure.md)
 - **Soroban Discord** — #soroban channel for SDK questions
 
 ## Recognition

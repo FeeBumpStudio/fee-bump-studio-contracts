@@ -173,4 +173,4 @@ scrape_configs:
 
 - [Deployment](deployment.md)
 - [Architecture](../contract-guide/architecture.md)
-- [Backend Monitoring](../../fee-bump-studio-backend/docs/operations/monitoring.md)
+- [Backend Monitoring](https://github.com/FeeBumpStudio/fee-bump-studio-backend/blob/main/docs/operations/monitoring.md)

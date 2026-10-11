@@ -233,4 +233,4 @@ cargo llvm-cov --html
 - [Interface](interface.md)
 - [Authorization](authorization.md)
 - [Deployment](deployment.md)
-- [CI Workflow](../configuration/ci-cd.md)
+- [CI Workflow](https://github.com/FeeBumpStudio/fee-bump-studio-contracts/blob/main/.github/workflows/ci.yml)

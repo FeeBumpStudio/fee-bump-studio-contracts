@@ -172,5 +172,5 @@ async function processContractEvent(event) {
 ## Related Documentation
 
 - [Architecture](architecture.md)
-- [Stellar Ingestion (Backend)](../api-reference/stellar-ingestion.md)
+- [Stellar Ingestion (Backend)](https://github.com/FeeBumpStudio/fee-bump-studio-backend/blob/main/docs/api-reference/stellar-ingestion.md)
 - [Operations - Monitoring](../operations/monitoring.md)

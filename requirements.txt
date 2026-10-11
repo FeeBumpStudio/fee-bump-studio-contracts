@@ -1,0 +1,7 @@
+mkdocs>=1.6,<2
+mkdocs-material>=9.5
+mkdocs-git-revision-date-localized-plugin
+mkdocs-minify-plugin
+mike
+pymdown-extensions
+linkchecker

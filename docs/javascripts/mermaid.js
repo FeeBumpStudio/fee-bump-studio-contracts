@@ -1,9 +1,8 @@
-// Mermaid diagram initialization for MkDocs Material
-
-// Configure mermaid globally
-if (typeof mermaid !== 'undefined') {
+const mermaidScript = document.createElement('script');
+mermaidScript.src = 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js';
+mermaidScript.onload = () => {
   mermaid.initialize({
-    startOnLoad: true,
+    startOnLoad: false,
     theme: 'default',
     themeVariables: {
       primaryColor: '#e65100',
@@ -45,7 +44,6 @@ if (typeof mermaid !== 'undefined') {
       messageMargin: 35,
       mirrorActors: true,
       bottomMarginAdj: 1,
-      useMaxWidth: true,
     },
     gantt: {
       useMaxWidth: true,
@@ -54,27 +52,18 @@ if (typeof mermaid !== 'undefined') {
     fontFamily: 'Inter, system-ui, sans-serif',
     fontSize: 14,
   });
+  renderMermaid();
+};
+document.head.appendChild(mermaidScript);
+
+function renderMermaid() {
+  if (typeof mermaid !== 'undefined') {
+    mermaid.run({ querySelector: '.mermaid:not([data-processed])' });
+  }
 }
 
-// Re-render mermaid on navigation (for Material's instant loading)
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof mermaid !== 'undefined') {
-    mermaid.init(undefined, document.querySelectorAll('.mermaid'));
-  }
-});
+document.addEventListener('DOMContentLoaded', renderMermaid);
 
-// Handle instant navigation (Material for MkDocs)
 if (typeof document$ !== 'undefined') {
-  document$.subscribe(() => {
-    if (typeof mermaid !== 'undefined') {
-      mermaid.init(undefined, document.querySelectorAll('.mermaid:not([data-processed])'));
-    }
-  });
+  document$.subscribe(renderMermaid);
 }
-
-// Fallback for standard navigation
-document.addEventListener('nav', () => {
-  if (typeof mermaid !== 'undefined') {
-    mermaid.init(undefined, document.querySelectorAll('.mermaid:not([data-processed])'));
-  }
-});
